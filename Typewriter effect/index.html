@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typewritter Effect</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="flex-center">
+        <h1>Escreva devagar para aprender a ir rápido</h1>
+    </div>
+
+    <script>
+        function typeWritter(elemento) {
+            const textArray = elemento.innerHTML.split('');
+            elemento.innerHTML = '';
+            textArray.forEach((letra, i) => {
+                setTimeout(() => elemento.innerHTML += letra, 75 * i);
+            });
+        }
+        const title = document.querySelector('h1');
+        
+            console.log("erro")
+            typeWritter(title);
+
+    </script>
+</body>
+
+</html>
