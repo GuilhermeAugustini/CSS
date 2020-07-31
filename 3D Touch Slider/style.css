@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #383838;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.card{
+    position: relative;
+    background-color: #fff;
+    width: 400px;
+    height: 500px;
+    margin: 0 auto;
+}
+.card .content{
+    width: 400px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.card .content a{
+    display: inline-block;
+    margin: 10px 0 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 2px solid #000;
+    color: #262626;
+    font-weight: 600;
+}
+.card .card-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    background: #000;
+}
+.card .card-title h3{
+    color: #fff;
+    font-size: 3rem;
+}
+.swiper-slide{
+    width: 400px;
+}
+.swiper-slide:nth-child(1) .card-title {
+    background-color: #d64255;
+}
+.swiper-slide:nth-child(2) .card-title {
+    background-color: #20549f;
+}
+.swiper-slide:nth-child(3) .card-title {
+    background-color: #5e9cab;
+}
+.swiper-slide:nth-child(4) .card-title {
+    background-color: #3e104d;
+}
+.swiper-slide:nth-child(5) .card-title {
+    background-color: #49b288;
+}
